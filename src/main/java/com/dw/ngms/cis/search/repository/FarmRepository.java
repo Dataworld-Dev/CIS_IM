@@ -23,7 +23,7 @@ public interface FarmRepository extends JpaRepository<Farm, Long>,JpaSpecificati
 
     List<Farm> findAll(Specification<Farm> specification);
 
-    @Query("SELECT u.registrationDivision FROM Farm u WHERE u.provinceCode = :provinceCode")
+    @Query("SELECT DISTINCT u.registrationDivision FROM Farm u WHERE u.provinceCode = :provinceCode order by u.registrationDivision ")
     List<Farm>  getRegistrationDivision(@Param("provinceCode") String provinceCode);
 
 
