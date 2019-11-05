@@ -85,4 +85,7 @@ public class Farm {
     @Column(name = "PREVIEW")
     private String preview;
 
+    @Column(name = "FILE_SIZE")
+    private String fileSize;
+
 }
