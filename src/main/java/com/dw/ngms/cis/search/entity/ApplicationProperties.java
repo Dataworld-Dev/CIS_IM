@@ -1,4 +1,4 @@
-package com.dw.ngms.cis.im.entity;
+package com.dw.ngms.cis.search.entity;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

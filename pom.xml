@@ -4,10 +4,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.dw.ngms</groupId>
-    <artifactId>cis_uam</artifactId>
+    <artifactId>cis_search_uam</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>cis_uam</name>
+    <name>cis_search_uam</name>
     <description>uam project with spring data jpa and oracle db</description>
 
     <parent>
@@ -68,18 +68,19 @@
 		</dependency>
 		
 		<!-- JDBC Connector :: MySQL -->
-		<dependency>
+	<!--	<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-
+-->
         <!-- https://mvnrepository.com/artifact/com.oracle/ojdbc7 -->
-       	<!-- <dependency>
+
+        <dependency>
             <groupId>com.oracle</groupId>
             <artifactId>ojdbc7</artifactId>
             <version>12.1.0.2</version>
-        </dependency> -->
+        </dependency>
 
 		<dependency>
         	<groupId>org.springframework.boot</groupId>
@@ -160,13 +161,15 @@
             <artifactId>jaxb-api</artifactId>
             <version>2.1</version>
         </dependency>
-        
+
 		<!-- https://mvnrepository.com/artifact/junit/junit -->
-		<!-- <dependency>
-		    <groupId>junit</groupId>
-		    <artifactId>junit</artifactId>
-		    <scope>test</scope>
-		</dependency> -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
@@ -182,7 +185,23 @@
 			<artifactId>itextpdf</artifactId>
 			<version>5.0.6</version>
 		</dependency>
-        <!-- https://mvnrepository.com/artifact/com.sendinblue/sendinblue -->
+
+		<!-- https://mvnrepository.com/artifact/org.olap4j/olap4j -->
+		<dependency>
+			<groupId>org.olap4j</groupId>
+			<artifactId>olap4j</artifactId>
+			<version>1.2.0</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/com.lowagie/itext -->
+		<dependency>
+			<groupId>com.lowagie</groupId>
+			<artifactId>itext</artifactId>
+			<version>2.1.7</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.sendinblue/sendinblue -->
         <dependency>
             <groupId>com.sendinblue</groupId>
             <artifactId>sendinblue</artifactId>
@@ -208,6 +227,7 @@
 		    <scope>provided</scope>
 		</dependency>
 
+
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
@@ -229,7 +249,7 @@
     </dependencies>
 
     <build>
-        <finalName>cis_uam</finalName>
+        <finalName>cis_search_uam</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
