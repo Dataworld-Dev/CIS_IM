@@ -1,3 +1,4 @@
+/*
 package com.dw.ngms.cis.workflow.service.test;
 
 import static org.junit.Assert.assertEquals;
@@ -19,7 +20,8 @@ public class ProcessLoaderTest {
 	@Autowired
 	private WorkflowProcessLoader processLoader;
 	
-	/*@Test
+	*/
+/*@Test
 	public void testLoadProcesses() throws IOException {
 	    Processes value = processLoader.loadProcesses();
 	    log.info("Processes size: "+value.getProcessList().size());
@@ -32,5 +34,7 @@ public class ProcessLoaderTest {
 	    Process value = processLoader.getProcess("infoRequest");
 	    log.info("Processes id: "+value.getId());
 	    assertEquals("infoRequest", value.getId());
-	}//testLoadProcesses*/
+	}//testLoadProcesses*//*
+
 }
+*/
