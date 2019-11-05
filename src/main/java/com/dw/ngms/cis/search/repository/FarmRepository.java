@@ -20,7 +20,6 @@ import java.util.UUID;
 public interface FarmRepository extends JpaRepository<Farm, Long>,JpaSpecificationExecutor<Farm> {
 
 
-
     List<Farm> findAll(Specification<Farm> specification);
 
     @Query("SELECT DISTINCT u.registrationDivision FROM Farm u WHERE u.provinceCode = :provinceCode order by u.registrationDivision ")
