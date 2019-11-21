@@ -20,6 +20,9 @@ import javax.persistence.Table;
 public class Deeds {
 
     @Id
+    @Column(name = "ID")
+    private String id;
+
     @Column(name = "SGNO")
     private String sgNo;
 
