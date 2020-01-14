@@ -36,7 +36,7 @@ public class SectionalTitleService {
                     predicates.add(criteriaBuilder.and(criteriaBuilder.equal(root.get("schemaNumber"), schemaNumber)));
                 }
                 if (schemeName != null && !StringUtils.isEmpty(schemeName)) {
-                    predicates.add(criteriaBuilder.and(criteriaBuilder.equal(root.get("schemeName"), schemeName)));
+                    predicates.add(criteriaBuilder.and(criteriaBuilder.equal(criteriaBuilder.trim(root.get("schemeName")), schemeName.trim())));
                 }
                 if (deedsRegistrationNumber != null && !StringUtils.isEmpty(deedsRegistrationNumber)) {
                     predicates.add(criteriaBuilder.and(criteriaBuilder.equal(root.get("deedsRegistrationNumber"), deedsRegistrationNumber)));
